@@ -41,6 +41,7 @@ pipeline {
     stage('Certify QA') {
       steps {
         echo 'QA certified'
+        input 'Do you want to certify?'
       }
     }
 
@@ -53,6 +54,7 @@ pipeline {
     stage('UAT Certify') {
       steps {
         echo 'UAT Certified'
+        input 'Do you want to certify?'
       }
     }
 
